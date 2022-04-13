@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Converter340</string>
+    <string name="titleName">ConvertIt</string>
+    <string name="cookingBtn">Cooking Conversions</string>
+    <string name="currencyBtn">Currency Conversions</string>
+    <string name="physicalBtn">Physical Measurement Conversions</string>
+    <string name="tempBtn">Temperature Conversions</string>
+</resources>
