@@ -5,4 +5,17 @@
     <string name="currencyBtn">Currency Conversions</string>
     <string name="physicalBtn">Physical Measurement Conversions</string>
     <string name="tempBtn">Temperature Conversions</string>
+    <string name="convertBtn">Convert</string>
+    <string name="currencyTitle">Currency</string>
+    <string name="fromLabel">From:</string>
+    <string name="toLabel">To:</string>
+    <string name="resultLabel">Result:</string>
+    <string name="currResultTxt">33.36</string>
+    <string name="currencyInputHint">Enter amount</string>
+    <string-array name="currencySpinnerValues">
+        <item>US Dollars</item>
+        <item>Euros</item>
+        <item>Yen</item>
+        <item>Pounds</item>
+    </string-array>
 </resources>
