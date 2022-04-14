@@ -26,8 +26,13 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         int eventSourceId = view.getId();
         Log.d(TAG, String.format("event source id: %s", eventSourceId));
 
-        if (eventSourceId == R.id.currency_btn) {
-            handleCurrencyButtonClick();
+        switch (eventSourceId) {
+            case R.id.currency_btn:
+                handleCurrencyButtonClick();
+                break;
+            default:
+                Log.d(TAG, String.format("Unknown click event. Source: %s", eventSourceId));
+                break;
         }
     }
 

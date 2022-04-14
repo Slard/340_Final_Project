@@ -43,11 +43,18 @@ public class Currency extends AppCompatActivity implements View.OnClickListener{
         int eventSourceId = view.getId();
         Log.d(TAG, String.format("Clicked on: %s", eventSourceId));
 
-        if (eventSourceId == R.id.back_btn) {
-            finish();
+        switch (eventSourceId) {
+            case R.id.back_btn:
+                finish();
+                Log.e(TAG, String.format("Whoo hoo!", eventSourceId));
+                break;
+            case R.id.convert_Btn:
+                Log.e(TAG, String.format("Whoo hoo!", eventSourceId));
+                break;
+            default:
+                Log.d(TAG, String.format("Unknown click event. Source: %s", eventSourceId));
+                break;
         }
-        else
-            Log.d(TAG, String.format("Unknown click event source: %s", eventSourceId));
     }
 
 }
