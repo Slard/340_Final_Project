@@ -7,15 +7,38 @@
     <string name="tempBtn">Temperature Conversions</string>
     <string name="convertBtn">Convert</string>
     <string name="currencyTitle">Currency</string>
+    <string name="cookingTitle">Cooking</string>
+    <string name="physicalTitle">Physical Measurements</string>
+    <string name="tempTitle">Temperatures</string>
     <string name="fromLabel">From:</string>
     <string name="toLabel">To:</string>
     <string name="resultLabel">Result:</string>
-    <string name="currResultTxt">33.36</string>
+    <string name="currResultTxt">_______</string>
+    <string name="cookResultTxt">_______</string>
+    <string name="physResultTxt">_______</string>
+    <string name="tempResultTxt">_______</string>
     <string name="currencyInputHint">Enter amount</string>
     <string-array name="currencySpinnerValues">
         <item>US Dollars</item>
         <item>Euros</item>
         <item>Yen</item>
         <item>Pounds</item>
+    </string-array>
+    <string-array name="cookingSpinnerValues">
+        <item>Cups</item>
+        <item>Teaspoons</item>
+        <item>Tablespoons</item>
+    </string-array>
+    <string-array name="physSpinnerValues">
+        <item>Inches</item>
+        <item>Centimeters</item>
+        <item>Feet</item>
+        <item>Yards</item>
+        <item>Meters</item>
+    </string-array>
+    <string-array name="tempSpinnerValues">
+        <item>Fahrenheit</item>
+        <item>Celsius</item>
+        <item>Kelvin</item>
     </string-array>
 </resources>

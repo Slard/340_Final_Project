@@ -17,8 +17,17 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        Button button = findViewById(R.id.currency_btn);
-        button.setOnClickListener(this);
+        Button currencyButton = findViewById(R.id.currency_btn);
+        currencyButton.setOnClickListener(this);
+
+        Button cookingButton = findViewById(R.id.cook_btn);
+        cookingButton.setOnClickListener(this);
+
+        Button physicalButton = findViewById(R.id.physical_btn);
+        physicalButton.setOnClickListener(this);
+
+        Button tempButton = findViewById(R.id.temp_btn);
+        tempButton.setOnClickListener(this);
     }
 
     @Override
@@ -26,13 +35,20 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         int eventSourceId = view.getId();
         Log.d(TAG, String.format("event source id: %s", eventSourceId));
 
-        switch (eventSourceId) {
-            case R.id.currency_btn:
-                handleCurrencyButtonClick();
-                break;
-            default:
-                Log.d(TAG, String.format("Unknown click event. Source: %s", eventSourceId));
-                break;
+        if (eventSourceId == R.id.currency_btn) {
+            handleCurrencyButtonClick();
+        }
+        else if (eventSourceId == R.id.cook_btn){
+            handleCookingButtonClick();
+        }
+        else if (eventSourceId == R.id.physical_btn){
+            handlePhysicalButtonClick();
+        }
+        else if (eventSourceId == R.id.temp_btn){
+            handleTempButtonClick();
+        }
+        else{
+            Log.d(TAG, String.format("Unknown click event source: %s", eventSourceId));
         }
     }
 
@@ -40,5 +56,16 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         Intent intent = new Intent(this, Currency.class);
         startActivity(intent);
     }
-
+    private void handleCookingButtonClick() {
+        Intent intent = new Intent(this, Cooking.class);
+        startActivity(intent);
+    }
+    private void handlePhysicalButtonClick() {
+        Intent intent = new Intent(this, Physical.class);
+        startActivity(intent);
+    }
+    private void handleTempButtonClick() {
+        Intent intent = new Intent(this, Temperature.class);
+        startActivity(intent);
+    }
 }

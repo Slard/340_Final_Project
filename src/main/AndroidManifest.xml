@@ -13,6 +13,15 @@
             android:name=".Currency"
             android:exported="false" />
         <activity
+            android:name=".Cooking"
+            android:exported="false" />
+        <activity
+            android:name=".Physical"
+            android:exported="false" />
+        <activity
+            android:name=".Temperature"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
